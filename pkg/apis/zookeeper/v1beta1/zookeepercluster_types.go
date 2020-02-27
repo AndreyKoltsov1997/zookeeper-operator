@@ -344,7 +344,7 @@ func (c *ZookeeperConfig) withDefaults() (changed bool) {
 	}
 	if c.TickTime == 0 {
 		changed = true
-		c.TickTime = 2000
+		c.TickTime = 5000
 	}
 	if c.SyncLimit == 0 {
 		changed = true
